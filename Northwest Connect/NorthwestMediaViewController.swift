@@ -8,12 +8,16 @@
 
 import UIKit
 
-class NorthwestMediaViewController: UIViewController {
+class NorthwestMediaViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var MediaWV: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        MediaWV.delegate = self
+        let url = NSURL(string: "http://www.nwmissouri.edu/media/index.htm")
+        let requestObj = NSURLRequest(URL: url!)
+        MediaWV.loadRequest(requestObj)
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +26,8 @@ class NorthwestMediaViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
@@ -33,5 +39,13 @@ class NorthwestMediaViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+func webViewDidStartLoad(webView: UIWebView) {
+    activityIndicatorIV.startAnimating()
+}
+
+func webViewDidFinishLoad(webView: UIWebView) {
+    activityIndicatorIV.stopAnimating()
+}
 
 }
