@@ -17,6 +17,7 @@
 		317702FD1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */; };
 		3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */; };
 		3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */; };
+		7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53CA611C9CC27C00287EBA /* SportsTableData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		317702FE1C9CABF200C1D9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestMediaViewController.swift; sourceTree = "<group>"; };
 		3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		7F53CA611C9CC27C00287EBA /* SportsTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				317702E31C9CABF200C1D9A2 /* Assets.xcassets */,
 				317702E51C9CABF200C1D9A2 /* LaunchScreen.storyboard */,
 				317702E81C9CABF200C1D9A2 /* Info.plist */,
+				7F53CA611C9CC27C00287EBA /* SportsTableData.swift */,
 			);
 			path = "Northwest Connect";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */,
 				317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */,
 				3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */,
+				7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */,
 				317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */,
 				3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */,
 			);
@@ -496,6 +500,7 @@
 				317703031C9CABF200C1D9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317703041C9CABF200C1D9A2 /* Build configuration list for PBXNativeTarget "Northwest ConnectTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				317703061C9CABF200C1D9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317703071C9CABF200C1D9A2 /* Build configuration list for PBXNativeTarget "Northwest ConnectUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				317703091C9CABF200C1D9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
