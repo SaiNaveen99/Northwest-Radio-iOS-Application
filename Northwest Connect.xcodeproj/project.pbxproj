@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */; };
-		317702DD1C9CABF200C1D9A2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DC1C9CABF200C1D9A2 /* FirstViewController.swift */; };
-		317702DF1C9CABF200C1D9A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DE1C9CABF200C1D9A2 /* SecondViewController.swift */; };
+		317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */; };
+		317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */; };
 		317702E21C9CABF200C1D9A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317702E01C9CABF200C1D9A2 /* Main.storyboard */; };
 		317702E41C9CABF200C1D9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317702E31C9CABF200C1D9A2 /* Assets.xcassets */; };
 		317702E71C9CABF200C1D9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317702E51C9CABF200C1D9A2 /* LaunchScreen.storyboard */; };
 		317702F21C9CABF200C1D9A2 /* Northwest_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702F11C9CABF200C1D9A2 /* Northwest_ConnectTests.swift */; };
 		317702FD1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */; };
+		3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */; };
+		3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* Begin PBXFileReference section */
 		317702D71C9CABF200C1D9A2 /* Northwest Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Northwest Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		317702DC1C9CABF200C1D9A2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		317702DE1C9CABF200C1D9A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+		317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissourianViewController.swift; sourceTree = "<group>"; };
 		317702E11C9CABF200C1D9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		317702E31C9CABF200C1D9A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317702E61C9CABF200C1D9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		317702F81C9CABF200C1D9A2 /* Northwest ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Northwest ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Northwest_ConnectUITests.swift; sourceTree = "<group>"; };
 		317702FE1C9CABF200C1D9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestMediaViewController.swift; sourceTree = "<group>"; };
+		3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */,
-				317702DC1C9CABF200C1D9A2 /* FirstViewController.swift */,
-				317702DE1C9CABF200C1D9A2 /* SecondViewController.swift */,
+				317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */,
+				317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */,
+				3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */,
+				3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */,
 				317702E01C9CABF200C1D9A2 /* Main.storyboard */,
 				317702E31C9CABF200C1D9A2 /* Assets.xcassets */,
 				317702E51C9CABF200C1D9A2 /* LaunchScreen.storyboard */,
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				317702DF1C9CABF200C1D9A2 /* SecondViewController.swift in Sources */,
+				317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */,
 				317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */,
-				317702DD1C9CABF200C1D9A2 /* FirstViewController.swift in Sources */,
+				3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */,
+				317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */,
+				3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

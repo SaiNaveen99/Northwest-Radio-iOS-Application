@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SportsViewController.swift
 //  Northwest Connect
 //
 //  Created by Kola,Harish on 3/18/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MissourianViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

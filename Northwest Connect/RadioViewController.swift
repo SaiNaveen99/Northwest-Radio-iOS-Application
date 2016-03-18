@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  RadioViewController.swift
 //  Northwest Connect
 //
 //  Created by Kola,Harish on 3/18/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class RadioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
