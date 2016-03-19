@@ -14,6 +14,6 @@ class SportsTableData
     
     init()
     {
-        sports = ["Mens Baseball","Mens BasketBall","Mens FootBall","Mens Tennis","Womens BasketBall","Womens Golf","Womens Soccer","Womens SoftBall","Womens Tennis"]
+        sports = ["Mens Baseball","Mens BasketBall","Mens FootBall","Mens Tennis","Mens VolleyBall","Womens BasketBall","Womens Golf","Womens Soccer","Womens SoftBall","Womens Tennis","Womens VolleyBall"]
     }
 }
