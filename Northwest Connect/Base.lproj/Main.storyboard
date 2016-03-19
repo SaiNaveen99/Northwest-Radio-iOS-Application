@@ -175,7 +175,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Media" image="Media" id="X2s-ar-V19"/>
+                    <tabBarItem key="tabBarItem" title="Media" image="AlumniFinal.png" id="X2s-ar-V19"/>
                     <connections>
                         <outlet property="MediaWV" destination="Siu-Oo-qof" id="hRW-1H-a7l"/>
                         <outlet property="activityIndicatorIV" destination="uzc-CZ-GGK" id="6qf-i2-7wZ"/>
@@ -208,7 +208,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Media" width="30" height="30"/>
+        <image name="AlumniFinal.png" width="30" height="30"/>
         <image name="News" width="30" height="30"/>
         <image name="Radio" width="30" height="30"/>
         <image name="Sports" width="30" height="30"/>
