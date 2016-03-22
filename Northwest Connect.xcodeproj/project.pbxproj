@@ -15,8 +15,8 @@
 		317702E71C9CABF200C1D9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317702E51C9CABF200C1D9A2 /* LaunchScreen.storyboard */; };
 		317702F21C9CABF200C1D9A2 /* Northwest_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702F11C9CABF200C1D9A2 /* Northwest_ConnectTests.swift */; };
 		317702FD1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */; };
-		3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */; };
 		3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */; };
+		31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */; };
 		7F2D3CC91C9CE6360043B718 /* AlumniFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */; };
 		7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53CA611C9CC27C00287EBA /* SportsTableData.swift */; };
 /* End PBXBuildFile section */
@@ -53,8 +53,8 @@
 		317702F81C9CABF200C1D9A2 /* Northwest ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Northwest ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Northwest_ConnectUITests.swift; sourceTree = "<group>"; };
 		317702FE1C9CABF200C1D9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestMediaViewController.swift; sourceTree = "<group>"; };
 		3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestAlumniViewController.swift; sourceTree = "<group>"; };
 		7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlumniFinal.png; sourceTree = "<group>"; };
 		7F53CA611C9CC27C00287EBA /* SportsTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,13 +107,13 @@
 		317702D91C9CABF200C1D9A2 /* Northwest Connect */ = {
 			isa = PBXGroup;
 			children = (
-				7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */,
 				317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */,
 				317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */,
 				317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */,
 				3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */,
-				3177030A1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift */,
 				317702E01C9CABF200C1D9A2 /* Main.storyboard */,
+				7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */,
+				31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */,
 				317702E31C9CABF200C1D9A2 /* Assets.xcassets */,
 				317702E51C9CABF200C1D9A2 /* LaunchScreen.storyboard */,
 				317702E81C9CABF200C1D9A2 /* Info.plist */,
@@ -274,10 +274,10 @@
 			files = (
 				317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */,
 				317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */,
-				3177030B1C9CAD4800C1D9A2 /* NorthwestMediaViewController.swift in Sources */,
 				7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */,
 				317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */,
 				3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */,
+				31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -70,11 +70,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5a-BZ-ArY" id="yYv-5f-IMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9K-iB-MEU">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,14 +108,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
+                                <rect key="frame" x="195" y="279" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="192" y="329" width="216" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="330"/>
         </scene>
-        <!--Media-->
+        <!--Alumni-->
         <scene sceneID="qjb-oc-zAa">
             <objects>
-                <viewController id="nGJ-hw-5YU" customClass="NorthwestMediaViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nGJ-hw-5YU" customClass="NorthwestAlumniViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Go2-yo-YDW"/>
                         <viewControllerLayoutGuide type="bottom" id="At7-v1-bsm"/>
@@ -150,40 +150,74 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-Oo-qof">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="-5" y="0.0" width="800" height="551"/>
-                                </variation>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-CZ-GGK">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4U-EG-8ev">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Northwest Alumni" id="7pp-sH-s3c">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="Wr8-82-qEx"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="f3v-jw-ILb">
+                                            <connections>
+                                                <action selector="GoToAlumniAction:" destination="nGJ-hw-5YU" id="rOi-ld-Pgd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mJA-mv-3Ac"/>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="3" width="800" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dM7-fg-oOt">
                                 <rect key="frame" x="-10" y="-10" width="20" height="20"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="390" y="256" width="20" height="20"/>
+                                    <rect key="frame" x="390" y="290" width="20" height="20"/>
                                 </variation>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="At7-v1-bsm" firstAttribute="top" secondItem="Siu-Oo-qof" secondAttribute="bottom" constant="8" symbolic="YES" id="9B0-2Y-xM2"/>
+                            <constraint firstAttribute="trailing" secondItem="Siu-Oo-qof" secondAttribute="trailing" id="Qhn-hA-MNP"/>
+                            <constraint firstItem="Siu-Oo-qof" firstAttribute="leading" secondItem="A4b-IS-om2" secondAttribute="leading" id="igr-qp-VJ0"/>
+                            <constraint firstItem="Siu-Oo-qof" firstAttribute="top" secondItem="Go2-yo-YDW" secondAttribute="bottom" constant="27" id="pFU-tC-lRT"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Siu-Oo-qof"/>
-                                <exclude reference="uzc-CZ-GGK"/>
+                                <exclude reference="l4U-EG-8ev"/>
+                                <exclude reference="dM7-fg-oOt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Qhn-hA-MNP"/>
+                                <exclude reference="igr-qp-VJ0"/>
+                                <exclude reference="pFU-tC-lRT"/>
+                                <exclude reference="9B0-2Y-xM2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="Siu-Oo-qof"/>
-                                <include reference="uzc-CZ-GGK"/>
+                                <include reference="l4U-EG-8ev"/>
+                                <include reference="dM7-fg-oOt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Qhn-hA-MNP"/>
+                                <include reference="igr-qp-VJ0"/>
+                                <include reference="pFU-tC-lRT"/>
+                                <include reference="9B0-2Y-xM2"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Media" image="AlumniFinal.png" id="X2s-ar-V19"/>
+                    <tabBarItem key="tabBarItem" title="Alumni" image="AlumniFinal" selectedImage="AlumniFinal.png" id="X2s-ar-V19"/>
                     <connections>
                         <outlet property="MediaWV" destination="Siu-Oo-qof" id="hRW-1H-a7l"/>
-                        <outlet property="activityIndicatorIV" destination="uzc-CZ-GGK" id="6qf-i2-7wZ"/>
+                        <outlet property="activityIndicatorIV" destination="dM7-fg-oOt" id="22T-fq-IHu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-in-3aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755.25" y="971"/>
+            <point key="canvasLocation" x="745.5" y="992"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -208,6 +242,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AlumniFinal" width="30" height="30"/>
         <image name="AlumniFinal.png" width="30" height="30"/>
         <image name="News" width="30" height="30"/>
         <image name="Radio" width="30" height="30"/>

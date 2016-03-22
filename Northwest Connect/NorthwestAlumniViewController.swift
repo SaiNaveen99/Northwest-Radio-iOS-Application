@@ -1,5 +1,5 @@
 //
-//  NorthwestMediaViewController.swift
+//  NorthwestAlumniViewController.swift
 //  Northwest Connect
 //
 //  Created by Kola,Harish on 3/18/16.
@@ -8,17 +8,22 @@
 
 import UIKit
 
-class NorthwestMediaViewController: UIViewController,UIWebViewDelegate {
+class NorthwestAlumniViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var MediaWV: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadWebPage()
+    }
+    
+    func loadWebPage()
+    {
         MediaWV.delegate = self
         let url = NSURL(string: "http://www.nwmissouri.edu/media/index.htm")
         let requestObj = NSURLRequest(URL: url!)
         MediaWV.loadRequest(requestObj)
-        // Do any additional setup after loading the view.
+
     }
 
     @IBOutlet weak var activityIndicatorIV: UIActivityIndicatorView!
@@ -29,6 +34,11 @@ class NorthwestMediaViewController: UIViewController,UIWebViewDelegate {
     
     
     
+    @IBAction func GoToAlumniAction(sender: AnyObject) {
+        
+        loadWebPage()
+        
+    }
 
     /*
     // MARK: - Navigation
