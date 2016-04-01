@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Radio-->
@@ -70,11 +71,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5a-BZ-ArY" id="yYv-5f-IMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9K-iB-MEU">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,7 +94,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfb-YX-0P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="839"/>
+            <point key="canvasLocation" x="-71.25" y="1004"/>
         </scene>
         <!--Missourian-->
         <scene sceneID="wg7-f3-ORb">
@@ -189,10 +190,10 @@
                                 <exclude reference="dM7-fg-oOt"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9B0-2Y-xM2"/>
                                 <exclude reference="Qhn-hA-MNP"/>
                                 <exclude reference="igr-qp-VJ0"/>
                                 <exclude reference="pFU-tC-lRT"/>
-                                <exclude reference="9B0-2Y-xM2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -202,10 +203,10 @@
                                 <include reference="dM7-fg-oOt"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9B0-2Y-xM2"/>
                                 <include reference="Qhn-hA-MNP"/>
                                 <include reference="igr-qp-VJ0"/>
                                 <include reference="pFU-tC-lRT"/>
-                                <include reference="9B0-2Y-xM2"/>
                             </mask>
                         </variation>
                     </view>
@@ -218,6 +219,158 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-in-3aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="745.5" y="992"/>
+        </scene>
+        <!--Upcoming Events-->
+        <scene sceneID="q6u-2A-xLO">
+            <objects>
+                <viewController id="48P-qw-FeB" customClass="UpcomingEventsTableViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Gu-TT-yeM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sqn-hm-scc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tAC-rX-3HX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="To6-bb-A6K">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="50" width="800" height="493"/>
+                                </variation>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-YG-Clo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Upcoming Events" prompt="Upcoming Events" id="H8R-eS-KYf">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="a9a-F9-aS7"/>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="To6-bb-A6K"/>
+                                <exclude reference="lFe-YG-Clo"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="To6-bb-A6K"/>
+                                <include reference="lFe-YG-Clo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upcoming Events" image="Upcoming Events" id="yc0-YU-vN6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQf-CK-CeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67.5" y="-475"/>
+        </scene>
+        <!--Latest News-->
+        <scene sceneID="JYA-Z9-k3c">
+            <objects>
+                <viewController id="3Dp-HC-v1k" customClass="LatestNewsTableViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IBR-B0-b9G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rjc-aw-nd0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZEG-KQ-hUv">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="th9-0W-Uwi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="44" width="800" height="507"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Dp-HC-v1k" id="mDv-1Y-KFZ"/>
+                                    <outlet property="delegate" destination="3Dp-HC-v1k" id="Lkk-PU-bpo"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF6-JE-jb0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Latest News" prompt="Latest News" id="QNf-b6-wKg">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ppK-Gf-4XZ"/>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="th9-0W-Uwi" firstAttribute="trailing" secondItem="ZEG-KQ-hUv" secondAttribute="trailingMargin" id="29T-1r-Twx"/>
+                            <constraint firstItem="th9-0W-Uwi" firstAttribute="leading" secondItem="ZEG-KQ-hUv" secondAttribute="leading" id="6Ib-hO-LrB"/>
+                            <constraint firstItem="th9-0W-Uwi" firstAttribute="top" secondItem="IBR-B0-b9G" secondAttribute="bottom" constant="43" id="BVC-UM-Lh8"/>
+                            <constraint firstItem="TF6-JE-jb0" firstAttribute="centerY" secondItem="ZEG-KQ-hUv" secondAttribute="centerY" id="Dqd-Zx-P0a"/>
+                            <constraint firstItem="TF6-JE-jb0" firstAttribute="centerX" secondItem="ZEG-KQ-hUv" secondAttribute="centerX" id="EBK-d7-5OP"/>
+                            <constraint firstItem="th9-0W-Uwi" firstAttribute="bottom" secondItem="Rjc-aw-nd0" secondAttribute="top" id="SOw-P7-TJc"/>
+                            <constraint firstItem="TF6-JE-jb0" firstAttribute="height" secondItem="ZEG-KQ-hUv" secondAttribute="height" id="e1k-Jj-T6i"/>
+                            <constraint firstItem="TF6-JE-jb0" firstAttribute="width" secondItem="ZEG-KQ-hUv" secondAttribute="width" id="zGS-tx-WXs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="th9-0W-Uwi"/>
+                                <exclude reference="TF6-JE-jb0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Dqd-Zx-P0a"/>
+                                <exclude reference="EBK-d7-5OP"/>
+                                <exclude reference="e1k-Jj-T6i"/>
+                                <exclude reference="zGS-tx-WXs"/>
+                                <exclude reference="29T-1r-Twx"/>
+                                <exclude reference="6Ib-hO-LrB"/>
+                                <exclude reference="BVC-UM-Lh8"/>
+                                <exclude reference="SOw-P7-TJc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="th9-0W-Uwi"/>
+                                <include reference="TF6-JE-jb0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Dqd-Zx-P0a"/>
+                                <include reference="EBK-d7-5OP"/>
+                                <include reference="e1k-Jj-T6i"/>
+                                <include reference="zGS-tx-WXs"/>
+                                <include reference="29T-1r-Twx"/>
+                                <include reference="6Ib-hO-LrB"/>
+                                <include reference="BVC-UM-Lh8"/>
+                                <include reference="SOw-P7-TJc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Latest News" image="Latest News" id="kMB-On-zDU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtN-E9-iVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91.5" y="-1150"/>
+        </scene>
+        <!--Alumni Tab Bar Controller-->
+        <scene sceneID="TIc-j6-hqb">
+            <objects>
+                <tabBarController id="RBH-XK-opv" customClass="AlumniTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gaq-WN-c4i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Dp-HC-v1k" kind="relationship" relationship="viewControllers" id="q7j-N4-ML1"/>
+                        <segue destination="48P-qw-FeB" kind="relationship" relationship="viewControllers" id="0eP-Zg-Ybz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrE-ze-X9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-768" y="-794"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -238,14 +391,16 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="12" y="207"/>
         </scene>
     </scenes>
     <resources>
         <image name="AlumniFinal" width="30" height="30"/>
         <image name="AlumniFinal.png" width="30" height="30"/>
+        <image name="Latest News" width="64" height="64"/>
         <image name="News" width="30" height="30"/>
         <image name="Radio" width="30" height="30"/>
         <image name="Sports" width="30" height="30"/>
+        <image name="Upcoming Events" width="52" height="52"/>
     </resources>
 </document>
