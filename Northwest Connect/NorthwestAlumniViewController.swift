@@ -11,20 +11,34 @@ import UIKit
 class NorthwestAlumniViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var MediaWV: UIWebView!
+    var goToAlumniTabBar:AlumniTabBarController!
     override func viewDidLoad() {
         super.viewDidLoad()
+        goToAlumniTabBar = AlumniTabBarController()
         
-        loadWebPage()
+//        goToAlumniTabBar = storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniIdentifier") as! AlumniTabBarController
+//        
+//        self.view.window?.rootViewController = goToAlumniTabBar
+//        
+        
+        //loadWebPage()
     }
-    
-    func loadWebPage()
-    {
-        MediaWV.delegate = self
-        let url = NSURL(string: "http://www.nwmissouri.edu/media/index.htm")
-        let requestObj = NSURLRequest(URL: url!)
-        MediaWV.loadRequest(requestObj)
+    override func viewDidAppear(animated: Bool) {
+        
+        let AlumniTabViewController =   self.storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniIdentifier") as! AlumniTabBarController
+        self.view.window?.rootViewController = AlumniTabViewController
+        
+    }
 
-    }
+    
+//    func loadWebPage()
+//    {
+//        MediaWV.delegate = self
+//        let url = NSURL(string: "http://www.nwmissouri.edu/media/index.htm")
+//        let requestObj = NSURLRequest(URL: url!)
+//        MediaWV.loadRequest(requestObj)
+//
+//    }
 
     @IBOutlet weak var activityIndicatorIV: UIActivityIndicatorView!
     override func didReceiveMemoryWarning() {
@@ -36,7 +50,7 @@ class NorthwestAlumniViewController: UIViewController,UIWebViewDelegate {
     
     @IBAction func GoToAlumniAction(sender: AnyObject) {
         
-        loadWebPage()
+       // loadWebPage()
         
     }
 

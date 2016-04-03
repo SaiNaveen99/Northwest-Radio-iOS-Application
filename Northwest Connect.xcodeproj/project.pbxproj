@@ -19,6 +19,11 @@
 		317702F21C9CABF200C1D9A2 /* Northwest_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702F11C9CABF200C1D9A2 /* Northwest_ConnectTests.swift */; };
 		317702FD1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */; };
 		3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */; };
+		31C6F5851CB0317D0071DB99 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5801CB0317D0071DB99 /* CSS.swift */; };
+		31C6F5861CB0317D0071DB99 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5811CB0317D0071DB99 /* Kanna.swift */; };
+		31C6F5871CB0317D0071DB99 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5821CB0317D0071DB99 /* libxmlHTMLDocument.swift */; };
+		31C6F5881CB0317D0071DB99 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5831CB0317D0071DB99 /* libxmlHTMLNode.swift */; };
+		31C6F5891CB0317D0071DB99 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5841CB0317D0071DB99 /* libxmlParserOption.swift */; };
 		31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */; };
 		7F2D3CC91C9CE6360043B718 /* AlumniFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */; };
 		7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53CA611C9CC27C00287EBA /* SportsTableData.swift */; };
@@ -60,6 +65,11 @@
 		317702FC1C9CABF200C1D9A2 /* Northwest_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Northwest_ConnectUITests.swift; sourceTree = "<group>"; };
 		317702FE1C9CABF200C1D9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3177030E1C9CAE2D00C1D9A2 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		31C6F5801CB0317D0071DB99 /* CSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSS.swift; sourceTree = "<group>"; };
+		31C6F5811CB0317D0071DB99 /* Kanna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanna.swift; sourceTree = "<group>"; };
+		31C6F5821CB0317D0071DB99 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		31C6F5831CB0317D0071DB99 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		31C6F5841CB0317D0071DB99 /* libxmlParserOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlParserOption.swift; sourceTree = "<group>"; };
 		31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestAlumniViewController.swift; sourceTree = "<group>"; };
 		7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlumniFinal.png; sourceTree = "<group>"; };
 		7F53CA611C9CC27C00287EBA /* SportsTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableData.swift; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 				317702E01C9CABF200C1D9A2 /* Main.storyboard */,
 				3127189B1CAF321100EA9006 /* LatestNewsTableViewController.swift */,
 				3127189D1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift */,
+				31C6F5801CB0317D0071DB99 /* CSS.swift */,
+				31C6F5811CB0317D0071DB99 /* Kanna.swift */,
+				31C6F5821CB0317D0071DB99 /* libxmlHTMLDocument.swift */,
+				31C6F5831CB0317D0071DB99 /* libxmlHTMLNode.swift */,
+				31C6F5841CB0317D0071DB99 /* libxmlParserOption.swift */,
 				312718991CAF2E7900EA9006 /* AlumniTabBarController.swift */,
 				7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */,
 				31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */,
@@ -281,13 +296,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C6F5861CB0317D0071DB99 /* Kanna.swift in Sources */,
+				31C6F5881CB0317D0071DB99 /* libxmlHTMLNode.swift in Sources */,
 				317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */,
 				317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */,
+				31C6F5871CB0317D0071DB99 /* libxmlHTMLDocument.swift in Sources */,
+				31C6F5891CB0317D0071DB99 /* libxmlParserOption.swift in Sources */,
 				7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */,
 				317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */,
 				3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */,
 				3127189E1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift in Sources */,
 				31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */,
+				31C6F5851CB0317D0071DB99 /* CSS.swift in Sources */,
 				3127189A1CAF2E7900EA9006 /* AlumniTabBarController.swift in Sources */,
 				3127189C1CAF321100EA9006 /* LatestNewsTableViewController.swift in Sources */,
 			);
@@ -384,6 +404,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/\"Northwest Connect\"/Modules";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,6 +443,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/\"Northwest Connect\"/Modules";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -431,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Northwest Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Northwest-Connect";
@@ -442,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Northwest Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Northwest-Connect";

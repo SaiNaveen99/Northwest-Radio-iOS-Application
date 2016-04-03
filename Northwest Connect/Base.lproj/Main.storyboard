@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Radio-->
@@ -11,48 +10,15 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="RadioViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="U8S-jl-GFC"/>
+                        <viewControllerLayoutGuide type="bottom" id="eap-Qb-kn9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KXCV 90.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Me-cr-R9Z">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="14" width="118" height="30"/>
-                                </variation>
-                            </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-pw-EOW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="52" width="800" height="491"/>
-                                </variation>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="1Me-cr-R9Z"/>
-                                <exclude reference="5aT-pw-EOW"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="1Me-cr-R9Z"/>
-                                <include reference="5aT-pw-EOW"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Radio" image="Radio" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="KRNWWV" destination="5aT-pw-EOW" id="oGC-fg-VUV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,21 +33,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sports_cell" textLabel="Y9K-iB-MEU" style="IBUITableViewCellStyleDefault" id="t5a-BZ-ArY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sports_cell" editingAccessoryType="checkmark" focusStyle="custom" id="t5a-BZ-ArY">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5a-BZ-ArY" id="yYv-5f-IMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9K-iB-MEU">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -101,120 +58,49 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="MissourianViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="1eY-cK-skN"/>
+                        <viewControllerLayoutGuide type="bottom" id="kMa-x9-fRT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="195" y="263" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="192" y="313" width="216" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Missourian" image="News" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="330"/>
+            <point key="canvasLocation" x="750" y="329.99999999999994"/>
         </scene>
         <!--Alumni-->
         <scene sceneID="qjb-oc-zAa">
             <objects>
-                <viewController id="nGJ-hw-5YU" customClass="NorthwestAlumniViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LinkToAlumniHomePage" id="nGJ-hw-5YU" customClass="NorthwestAlumniViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Go2-yo-YDW"/>
-                        <viewControllerLayoutGuide type="bottom" id="At7-v1-bsm"/>
+                        <viewControllerLayoutGuide type="top" id="Wte-aA-ltr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ux3-2C-DbV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A4b-IS-om2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-Oo-qof">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4U-EG-8ev">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Northwest Alumni" id="7pp-sH-s3c">
-                                        <barButtonItem key="backBarButtonItem" title="Home" id="Wr8-82-qEx"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="f3v-jw-ILb">
-                                            <connections>
-                                                <action selector="GoToAlumniAction:" destination="nGJ-hw-5YU" id="rOi-ld-Pgd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mJA-mv-3Ac"/>
-                                    </navigationItem>
-                                </items>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="3" width="800" height="44"/>
-                                </variation>
-                            </navigationBar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dM7-fg-oOt">
-                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="390" y="290" width="20" height="20"/>
-                                </variation>
-                            </activityIndicatorView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="At7-v1-bsm" firstAttribute="top" secondItem="Siu-Oo-qof" secondAttribute="bottom" constant="8" symbolic="YES" id="9B0-2Y-xM2"/>
-                            <constraint firstAttribute="trailing" secondItem="Siu-Oo-qof" secondAttribute="trailing" id="Qhn-hA-MNP"/>
-                            <constraint firstItem="Siu-Oo-qof" firstAttribute="leading" secondItem="A4b-IS-om2" secondAttribute="leading" id="igr-qp-VJ0"/>
-                            <constraint firstItem="Siu-Oo-qof" firstAttribute="top" secondItem="Go2-yo-YDW" secondAttribute="bottom" constant="27" id="pFU-tC-lRT"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Siu-Oo-qof"/>
-                                <exclude reference="l4U-EG-8ev"/>
-                                <exclude reference="dM7-fg-oOt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="9B0-2Y-xM2"/>
-                                <exclude reference="Qhn-hA-MNP"/>
-                                <exclude reference="igr-qp-VJ0"/>
-                                <exclude reference="pFU-tC-lRT"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="Siu-Oo-qof"/>
-                                <include reference="l4U-EG-8ev"/>
-                                <include reference="dM7-fg-oOt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="9B0-2Y-xM2"/>
-                                <include reference="Qhn-hA-MNP"/>
-                                <include reference="igr-qp-VJ0"/>
-                                <include reference="pFU-tC-lRT"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alumni" image="AlumniFinal" selectedImage="AlumniFinal.png" id="X2s-ar-V19"/>
-                    <connections>
-                        <outlet property="MediaWV" destination="Siu-Oo-qof" id="hRW-1H-a7l"/>
-                        <outlet property="activityIndicatorIV" destination="dM7-fg-oOt" id="22T-fq-IHu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-in-3aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,139 +111,121 @@
             <objects>
                 <viewController id="48P-qw-FeB" customClass="UpcomingEventsTableViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Gu-TT-yeM"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sqn-hm-scc"/>
+                        <viewControllerLayoutGuide type="top" id="KeT-JX-Ljq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mbp-3Q-Np1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tAC-rX-3HX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="To6-bb-A6K">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="50" width="800" height="493"/>
-                                </variation>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-YG-Clo">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-t9-YJz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Upcoming Events" prompt="Upcoming Events" id="H8R-eS-KYf">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="a9a-F9-aS7"/>
+                                    <navigationItem title="Upcoming Events" id="2yK-kj-NBT">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Fv2-ux-zh5">
+                                            <connections>
+                                                <action selector="BackToAlumniAction:" destination="48P-qw-FeB" id="ZqB-qm-QJR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
+                                    <rect key="frame" x="0.0" y="20" width="800" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-ca-2cl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="800" height="479"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="To6-bb-A6K"/>
-                                <exclude reference="lFe-YG-Clo"/>
+                                <exclude reference="CQs-t9-YJz"/>
+                                <exclude reference="Kpb-ca-2cl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="To6-bb-A6K"/>
-                                <include reference="lFe-YG-Clo"/>
+                                <include reference="CQs-t9-YJz"/>
+                                <include reference="Kpb-ca-2cl"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upcoming Events" image="Upcoming Events" id="yc0-YU-vN6"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="EventsContainerView" destination="Kpb-ca-2cl" id="3bT-4o-jsP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQf-CK-CeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67.5" y="-475"/>
+            <point key="canvasLocation" x="12" y="-680"/>
         </scene>
         <!--Latest News-->
         <scene sceneID="JYA-Z9-k3c">
             <objects>
                 <viewController id="3Dp-HC-v1k" customClass="LatestNewsTableViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IBR-B0-b9G"/>
-                        <viewControllerLayoutGuide type="bottom" id="Rjc-aw-nd0"/>
+                        <viewControllerLayoutGuide type="top" id="NgV-Cs-lZz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4sR-Kl-1sK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZEG-KQ-hUv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="th9-0W-Uwi">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVx-he-QNd">
+                                <rect key="frame" x="0.0" y="77" width="600" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="44" width="800" height="507"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="77" width="800" height="466"/>
                                 </variation>
-                                <connections>
-                                    <outlet property="dataSource" destination="3Dp-HC-v1k" id="mDv-1Y-KFZ"/>
-                                    <outlet property="delegate" destination="3Dp-HC-v1k" id="Lkk-PU-bpo"/>
-                                </connections>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF6-JE-jb0">
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-4G-uNb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Latest News" prompt="Latest News" id="QNf-b6-wKg">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ppK-Gf-4XZ"/>
+                                    <navigationItem title="Latest News" id="cnr-JN-xxc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kuD-Ml-vl4">
+                                            <connections>
+                                                <action selector="BackToAlumniPage:" destination="3Dp-HC-v1k" id="zTB-D4-WDM"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="15" width="800" height="44"/>
                                 </variation>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="th9-0W-Uwi" firstAttribute="trailing" secondItem="ZEG-KQ-hUv" secondAttribute="trailingMargin" id="29T-1r-Twx"/>
-                            <constraint firstItem="th9-0W-Uwi" firstAttribute="leading" secondItem="ZEG-KQ-hUv" secondAttribute="leading" id="6Ib-hO-LrB"/>
-                            <constraint firstItem="th9-0W-Uwi" firstAttribute="top" secondItem="IBR-B0-b9G" secondAttribute="bottom" constant="43" id="BVC-UM-Lh8"/>
-                            <constraint firstItem="TF6-JE-jb0" firstAttribute="centerY" secondItem="ZEG-KQ-hUv" secondAttribute="centerY" id="Dqd-Zx-P0a"/>
-                            <constraint firstItem="TF6-JE-jb0" firstAttribute="centerX" secondItem="ZEG-KQ-hUv" secondAttribute="centerX" id="EBK-d7-5OP"/>
-                            <constraint firstItem="th9-0W-Uwi" firstAttribute="bottom" secondItem="Rjc-aw-nd0" secondAttribute="top" id="SOw-P7-TJc"/>
-                            <constraint firstItem="TF6-JE-jb0" firstAttribute="height" secondItem="ZEG-KQ-hUv" secondAttribute="height" id="e1k-Jj-T6i"/>
-                            <constraint firstItem="TF6-JE-jb0" firstAttribute="width" secondItem="ZEG-KQ-hUv" secondAttribute="width" id="zGS-tx-WXs"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="th9-0W-Uwi"/>
-                                <exclude reference="TF6-JE-jb0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="Dqd-Zx-P0a"/>
-                                <exclude reference="EBK-d7-5OP"/>
-                                <exclude reference="e1k-Jj-T6i"/>
-                                <exclude reference="zGS-tx-WXs"/>
-                                <exclude reference="29T-1r-Twx"/>
-                                <exclude reference="6Ib-hO-LrB"/>
-                                <exclude reference="BVC-UM-Lh8"/>
-                                <exclude reference="SOw-P7-TJc"/>
+                                <exclude reference="nKl-4G-uNb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="th9-0W-Uwi"/>
-                                <include reference="TF6-JE-jb0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="Dqd-Zx-P0a"/>
-                                <include reference="EBK-d7-5OP"/>
-                                <include reference="e1k-Jj-T6i"/>
-                                <include reference="zGS-tx-WXs"/>
-                                <include reference="29T-1r-Twx"/>
-                                <include reference="6Ib-hO-LrB"/>
-                                <include reference="BVC-UM-Lh8"/>
-                                <include reference="SOw-P7-TJc"/>
+                                <include reference="nKl-4G-uNb"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Latest News" image="Latest News" id="kMB-On-zDU"/>
+                    <connections>
+                        <outlet property="containerView" destination="SVx-he-QNd" id="jCG-QX-fNX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtN-E9-iVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91.5" y="-1150"/>
+            <point key="canvasLocation" x="-492.75" y="-1312"/>
         </scene>
         <!--Alumni Tab Bar Controller-->
         <scene sceneID="TIc-j6-hqb">
             <objects>
-                <tabBarController id="RBH-XK-opv" customClass="AlumniTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="LinkingToAlumniIdentifier" id="RBH-XK-opv" customClass="AlumniTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gaq-WN-c4i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -370,7 +238,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrE-ze-X9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-768" y="-794"/>
+            <point key="canvasLocation" x="-946.5" y="-663"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
