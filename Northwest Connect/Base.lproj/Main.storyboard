@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Radio-->
@@ -37,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5a-BZ-ArY" id="yYv-5f-IMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -90,7 +91,7 @@
         <!--Alumni-->
         <scene sceneID="qjb-oc-zAa">
             <objects>
-                <viewController storyboardIdentifier="LinkToAlumniHomePage" id="nGJ-hw-5YU" customClass="NorthwestAlumniViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlumniIdentifier" id="nGJ-hw-5YU" customClass="NorthwestAlumniViewController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wte-aA-ltr"/>
                         <viewControllerLayoutGuide type="bottom" id="Ux3-2C-DbV"/>
@@ -101,10 +102,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alumni" image="AlumniFinal" selectedImage="AlumniFinal.png" id="X2s-ar-V19"/>
+                    <connections>
+                        <segue destination="RBH-XK-opv" kind="show" id="FWO-mZ-8cb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-in-3aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745.5" y="992"/>
+            <point key="canvasLocation" x="558.75" y="895"/>
         </scene>
         <!--Upcoming Events-->
         <scene sceneID="q6u-2A-xLO">
@@ -127,31 +131,32 @@
                                                 <action selector="BackToAlumniAction:" destination="48P-qw-FeB" id="ZqB-qm-QJR"/>
                                             </connections>
                                         </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Home" id="bwU-0U-l4W"/>
+                                            <barButtonItem width="60" style="plain" id="hAN-74-4Lu">
+                                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="AU6-zU-efI">
+                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                                </switch>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="20" width="800" height="44"/>
                                 </variation>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-ca-2cl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="800" height="479"/>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="CQs-t9-YJz"/>
-                                <exclude reference="Kpb-ca-2cl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="CQs-t9-YJz"/>
-                                <include reference="Kpb-ca-2cl"/>
                             </mask>
                         </variation>
                     </view>
@@ -159,12 +164,12 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="EventsContainerView" destination="Kpb-ca-2cl" id="3bT-4o-jsP"/>
+                        <outlet property="dayAndNigthSwitch" destination="AU6-zU-efI" id="EpC-um-U2W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQf-CK-CeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-680"/>
+            <point key="canvasLocation" x="139.5" y="-841"/>
         </scene>
         <!--Latest News-->
         <scene sceneID="JYA-Z9-k3c">
@@ -178,13 +183,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVx-he-QNd">
-                                <rect key="frame" x="0.0" y="77" width="600" height="466"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="77" width="800" height="466"/>
-                                </variation>
-                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-4G-uNb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
@@ -194,6 +192,15 @@
                                                 <action selector="BackToAlumniPage:" destination="3Dp-HC-v1k" id="zTB-D4-WDM"/>
                                             </connections>
                                         </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Home" id="4lK-BW-y6L"/>
+                                            <barButtonItem style="plain" id="wQ3-kd-ALu">
+                                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="6Lr-FA-HVJ">
+                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </switch>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -215,17 +222,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Latest News" image="Latest News" id="kMB-On-zDU"/>
                     <connections>
-                        <outlet property="containerView" destination="SVx-he-QNd" id="jCG-QX-fNX"/>
+                        <outlet property="dayAndNightSwitch" destination="6Lr-FA-HVJ" id="wQP-4N-syJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtN-E9-iVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492.75" y="-1312"/>
+            <point key="canvasLocation" x="-723.75" y="-1353"/>
         </scene>
         <!--Alumni Tab Bar Controller-->
         <scene sceneID="TIc-j6-hqb">
             <objects>
-                <tabBarController storyboardIdentifier="LinkingToAlumniIdentifier" id="RBH-XK-opv" customClass="AlumniTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="LinkingToAlumniTabBar" id="RBH-XK-opv" customClass="AlumniTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gaq-WN-c4i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,12 +245,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrE-ze-X9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946.5" y="-663"/>
+            <point key="canvasLocation" x="-811.5" y="130"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Project Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="ProjectTabBarController" customModule="Northwest_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -259,7 +266,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="207"/>
+            <point key="canvasLocation" x="-171.75" y="227"/>
         </scene>
     </scenes>
     <resources>

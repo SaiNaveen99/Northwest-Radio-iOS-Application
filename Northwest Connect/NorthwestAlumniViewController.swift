@@ -11,10 +11,10 @@ import UIKit
 class NorthwestAlumniViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var MediaWV: UIWebView!
-    var goToAlumniTabBar:AlumniTabBarController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        goToAlumniTabBar = AlumniTabBarController()
+        
         
 //        goToAlumniTabBar = storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniIdentifier") as! AlumniTabBarController
 //        
@@ -25,9 +25,13 @@ class NorthwestAlumniViewController: UIViewController,UIWebViewDelegate {
     }
     override func viewDidAppear(animated: Bool) {
         
-        let AlumniTabViewController =   self.storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniIdentifier") as! AlumniTabBarController
+        let AlumniTabViewController =   self.storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniTabBar") as! AlumniTabBarController
         self.view.window?.rootViewController = AlumniTabViewController
         
+    }
+    override func viewWillAppear(animated: Bool) {
+        let AlumniTabViewController =   self.storyboard?.instantiateViewControllerWithIdentifier("LinkingToAlumniTabBar") as! AlumniTabBarController
+        self.view.window?.rootViewController = AlumniTabViewController
     }
 
     

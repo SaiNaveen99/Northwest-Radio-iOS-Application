@@ -11,9 +11,10 @@ import UIKit
 class UpcomingEventsTableViewController: UIViewController {
     var alumniHomePage:NorthwestAlumniViewController!
 
+    @IBOutlet weak var dayAndNigthSwitch: UISwitch!
     @IBAction func BackToAlumniAction(sender: AnyObject) {
         alumniHomePage = NorthwestAlumniViewController()
-        let HomePage = self.storyboard?.instantiateViewControllerWithIdentifier("LinkToAlumniHomePage") as! NorthwestAlumniViewController
+        let HomePage = self.storyboard?.instantiateViewControllerWithIdentifier("AlumniIdentifier") as! NorthwestAlumniViewController
         self.view.window?.rootViewController = HomePage
         
     }
