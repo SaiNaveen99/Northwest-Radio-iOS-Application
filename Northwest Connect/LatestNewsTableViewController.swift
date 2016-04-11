@@ -11,8 +11,7 @@ import WebKit
 class LatestNewsTableViewController: UIViewController {
     var alumniHomeViewController:NorthwestAlumniViewController!
     var projectTabBarController:ProjectTabBarController!
- 
-    @IBOutlet weak var dayAndNightSwitch: UISwitch!
+
     
     
     @IBAction func BackToAlumniPage(sender: AnyObject) {

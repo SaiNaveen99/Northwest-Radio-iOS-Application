@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Radio-->
@@ -131,16 +130,7 @@
                                                 <action selector="BackToAlumniAction:" destination="48P-qw-FeB" id="ZqB-qm-QJR"/>
                                             </connections>
                                         </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem title="Home" id="bwU-0U-l4W"/>
-                                            <barButtonItem width="60" style="plain" id="hAN-74-4Lu">
-                                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="AU6-zU-efI">
-                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                </switch>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="bwU-0U-l4W"/>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -163,9 +153,6 @@
                     <tabBarItem key="tabBarItem" title="Upcoming Events" image="Upcoming Events" id="yc0-YU-vN6"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="dayAndNigthSwitch" destination="AU6-zU-efI" id="EpC-um-U2W"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQf-CK-CeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,15 +179,7 @@
                                                 <action selector="BackToAlumniPage:" destination="3Dp-HC-v1k" id="zTB-D4-WDM"/>
                                             </connections>
                                         </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem title="Home" id="4lK-BW-y6L"/>
-                                            <barButtonItem style="plain" id="wQ3-kd-ALu">
-                                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="6Lr-FA-HVJ">
-                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </switch>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="4lK-BW-y6L"/>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -220,10 +199,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Latest News" image="Latest News" id="kMB-On-zDU"/>
-                    <connections>
-                        <outlet property="dayAndNightSwitch" destination="6Lr-FA-HVJ" id="wQP-4N-syJ"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Latest News" image="News" id="kMB-On-zDU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtN-E9-iVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,7 +248,6 @@
     <resources>
         <image name="AlumniFinal" width="30" height="30"/>
         <image name="AlumniFinal.png" width="30" height="30"/>
-        <image name="Latest News" width="64" height="64"/>
         <image name="News" width="30" height="30"/>
         <image name="Radio" width="30" height="30"/>
         <image name="Sports" width="30" height="30"/>
