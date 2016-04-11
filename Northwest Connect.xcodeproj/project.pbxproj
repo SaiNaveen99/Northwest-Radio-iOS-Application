@@ -11,6 +11,7 @@
 		3127189A1CAF2E7900EA9006 /* AlumniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312718991CAF2E7900EA9006 /* AlumniTabBarController.swift */; };
 		3127189C1CAF321100EA9006 /* LatestNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127189B1CAF321100EA9006 /* LatestNewsTableViewController.swift */; };
 		3127189E1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127189D1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift */; };
+		313B6D791CBC0D030001855E /* Modules in Resources */ = {isa = PBXBuildFile; fileRef = 313B6D781CBC0D030001855E /* Modules */; };
 		317702DB1C9CABF200C1D9A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */; };
 		317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */; };
 		317702DF1C9CABF200C1D9A2 /* MissourianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */; };
@@ -52,6 +53,7 @@
 		312718991CAF2E7900EA9006 /* AlumniTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlumniTabBarController.swift; sourceTree = "<group>"; };
 		3127189B1CAF321100EA9006 /* LatestNewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestNewsTableViewController.swift; sourceTree = "<group>"; };
 		3127189D1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTableViewController.swift; sourceTree = "<group>"; };
+		313B6D781CBC0D030001855E /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 		317702D71C9CABF200C1D9A2 /* Northwest Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Northwest Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		317702D91C9CABF200C1D9A2 /* Northwest Connect */ = {
 			isa = PBXGroup;
 			children = (
+				313B6D781CBC0D030001855E /* Modules */,
 				317702DA1C9CABF200C1D9A2 /* AppDelegate.swift */,
 				317702DC1C9CABF200C1D9A2 /* RadioViewController.swift */,
 				317702DE1C9CABF200C1D9A2 /* MissourianViewController.swift */,
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313B6D791CBC0D030001855E /* Modules in Resources */,
 				317702E71C9CABF200C1D9A2 /* LaunchScreen.storyboard in Resources */,
 				317702E41C9CABF200C1D9A2 /* Assets.xcassets in Resources */,
 				7F2D3CC91C9CE6360043B718 /* AlumniFinal.png in Resources */,
