@@ -14,21 +14,12 @@ class ParsedViewController: UIViewController {
     let sportsTableData:SportsTableData = SportsTableData()
     
     
-    
-    @IBOutlet weak var navBar: UINavigationBar!
-    
-    
     @IBOutlet weak var webViewParsed: UIWebView!
     
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-
-        // Do any additional setup after loading the view.
-    }
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
