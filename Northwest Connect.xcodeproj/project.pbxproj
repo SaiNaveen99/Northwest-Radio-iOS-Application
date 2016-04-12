@@ -28,6 +28,7 @@
 		31C6F5891CB0317D0071DB99 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6F5841CB0317D0071DB99 /* libxmlParserOption.swift */; };
 		31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */; };
 		7F2D3CC91C9CE6360043B718 /* AlumniFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */; };
+		7F30D3AD1CBD44D8007F01D9 /* StringFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30D3AC1CBD44D8007F01D9 /* StringFinder.swift */; };
 		7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53CA611C9CC27C00287EBA /* SportsTableData.swift */; };
 		7F85BBAC1CBC692A00DC20C5 /* SportsInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85BBAB1CBC692A00DC20C5 /* SportsInfoTableViewController.swift */; };
 		7F85BBAE1CBC727600DC20C5 /* ParsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85BBAD1CBC727600DC20C5 /* ParsedViewController.swift */; };
@@ -78,6 +79,7 @@
 		31C6F5841CB0317D0071DB99 /* libxmlParserOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlParserOption.swift; sourceTree = "<group>"; };
 		31D84DA91CA1C525008A6802 /* NorthwestAlumniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwestAlumniViewController.swift; sourceTree = "<group>"; };
 		7F2D3CC81C9CE6360043B718 /* AlumniFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlumniFinal.png; sourceTree = "<group>"; };
+		7F30D3AC1CBD44D8007F01D9 /* StringFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFinder.swift; sourceTree = "<group>"; };
 		7F53CA611C9CC27C00287EBA /* SportsTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableData.swift; sourceTree = "<group>"; };
 		7F85BBAB1CBC692A00DC20C5 /* SportsInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsInfoTableViewController.swift; sourceTree = "<group>"; };
 		7F85BBAD1CBC727600DC20C5 /* ParsedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				7F53CA611C9CC27C00287EBA /* SportsTableData.swift */,
 				7F85BBAB1CBC692A00DC20C5 /* SportsInfoTableViewController.swift */,
 				7F85BBAD1CBC727600DC20C5 /* ParsedViewController.swift */,
+				7F30D3AC1CBD44D8007F01D9 /* StringFinder.swift */,
 			);
 			path = "Northwest Connect";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				7F53CA621C9CC27C00287EBA /* SportsTableData.swift in Sources */,
 				317702DD1C9CABF200C1D9A2 /* RadioViewController.swift in Sources */,
 				3177030F1C9CAE2D00C1D9A2 /* SportsTableViewController.swift in Sources */,
+				7F30D3AD1CBD44D8007F01D9 /* StringFinder.swift in Sources */,
 				3127189E1CAF322C00EA9006 /* UpcomingEventsTableViewController.swift in Sources */,
 				31D84DAA1CA1C525008A6802 /* NorthwestAlumniViewController.swift in Sources */,
 				31C6F5851CB0317D0071DB99 /* CSS.swift in Sources */,
