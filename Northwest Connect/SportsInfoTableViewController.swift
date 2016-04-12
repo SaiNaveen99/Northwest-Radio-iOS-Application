@@ -1,19 +1,21 @@
 //
-//  SportsTableViewController.swift
+//  SportsInfoTableViewController.swift
 //  Northwest Connect
 //
-//  Created by Kola,Harish on 3/18/16.
+//  Created by Mallampati,Sai Naveen on 4/11/16.
 //  Copyright © 2016 Kola,Harish. All rights reserved.
 //
 
 import UIKit
 
-class SportsTableViewController: UITableViewController {
+class SportsInfoTableViewController: UITableViewController {
 
-    let sportstabledata:SportsTableData = SportsTableData()
-  
+      var sportsTabledata:SportsTableData = SportsTableData()
+     var  rowSelected:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,7 +26,7 @@ class SportsTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources thatcan be recreated.
+        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -36,36 +38,23 @@ class SportsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return sportstabledata.sports.count
+        return sportsTabledata.sportsInfo.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("sports_cell", forIndexPath: indexPath)
-        
-        cell.textLabel?.text = sportstabledata.sports[indexPath.row]
-   
+        let cell = tableView.dequeueReusableCellWithIdentifier("sportsinfo", forIndexPath: indexPath)
+
+       cell.textLabel?.text = sportsTabledata.sportsInfo[indexPath.row]
+
         return cell
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       
-        var destination = segue.destinationViewController as! SportsInfoTableViewController
-        
-        
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sportsTabledata.sports[rowSelected]
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let sportsInfoTableViewController:SportsInfoTableViewController = SportsInfoTableViewController()
-        sportsInfoTableViewController.rowSelected = indexPath.row
-        print("hello")
-        
-    }
-
-    
-    
-    
+  
 
     /*
     // Override to support conditional editing of the table view.
