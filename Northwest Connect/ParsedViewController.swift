@@ -33,7 +33,7 @@ class ParsedViewController: UIViewController , UIWebViewDelegate{
     
     override func viewWillAppear(animated: Bool) {
         
-        self.navigationItem.title = sportsData.sports[sportsData.sportSelected] + " " + sportsData.sportsInfo[sportsData.sportInfoSelected] + " " +"Page"
+        self.navigationItem.title = sportsData.sports[sportsData.sportSelected] + " " + sportsData.sportsInfo[sportsData.sportInfoSelected] + " " + "Page"
         
         
         var testUrl:NSURL = NSURL(string:sportsData.homelinks[sportsData.sportSelected])!
