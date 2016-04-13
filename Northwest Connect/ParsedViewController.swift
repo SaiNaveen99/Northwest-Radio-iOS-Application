@@ -9,28 +9,64 @@
 import UIKit
 
 
-class ParsedViewController: UIViewController {
+class ParsedViewController: UIViewController , UIWebViewDelegate{
     
-    let sportsTableData:SportsTableData = SportsTableData()
+    var sportsData:SportsData!
     
     
     @IBOutlet weak var webViewParsed: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let appy:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.sportsData = appy.sportsData
+        webViewParsed.delegate = self
+        
         
         }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(animated: Bool) {
         
-        let testUrl = NSURL(string:sportsTableData.schedulelinks[0])
+        self.navigationItem.title = sportsData.sports[sportsData.sportSelected] + " " + sportsData.sportsInfo[sportsData.sportInfoSelected] + " " +"Page"
         
-        let requestObj = NSURLRequest(URL: testUrl!);
+        
+        var testUrl:NSURL = NSURL(string:sportsData.homelinks[sportsData.sportSelected])!
+       
+        
+        if(sportsData.sportInfoSelected == 0)
+        {
+             testUrl = NSURL(string:sportsData.homelinks[sportsData.sportSelected])!
+        }
+       else if(sportsData.sportInfoSelected == 1)
+        {
+            testUrl = NSURL(string:sportsData.schedulelinks[sportsData.sportSelected])!
+        }
+        else if(sportsData.sportInfoSelected == 2)
+        {
+            testUrl = NSURL(string:sportsData.rosterlinks[sportsData.sportSelected])!
+        }
+        else if(sportsData.sportInfoSelected == 3)
+        {
+            testUrl = NSURL(string:sportsData.statisticslinks[sportsData.sportSelected])!
+        }
+        else if(sportsData.sportInfoSelected == 3)
+        {
+            testUrl = NSURL(string:sportsData.archivedstorieslinks[sportsData.sportSelected])!
+        }
+        
+
+        
+       
+        
+        let requestObj = NSURLRequest(URL: testUrl);
+        
+        webViewParsed.frame = self.view.frame
         
        
         webViewParsed.loadRequest(requestObj);

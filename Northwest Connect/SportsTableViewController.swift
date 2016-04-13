@@ -10,16 +10,13 @@ import UIKit
 
 class SportsTableViewController: UITableViewController {
 
-    let sportstabledata:SportsTableData = SportsTableData()
-  
+    var sportsData:SportsData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let appy:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.sportsData = appy.sportsData
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +33,7 @@ class SportsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return sportstabledata.sports.count
+        return sportsData.sports.count
     }
 
     
@@ -44,7 +41,7 @@ class SportsTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("sports_cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = sportstabledata.sports[indexPath.row]
+        cell.textLabel?.text = sportsData.sports[indexPath.row]
    
         return cell
     }
@@ -57,9 +54,8 @@ class SportsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let sportsInfoTableViewController:SportsInfoTableViewController = SportsInfoTableViewController()
-        sportsInfoTableViewController.rowSelected = indexPath.row
-        print("hello")
+        sportsData.sportSelected = indexPath.row
+        
         
     }
 
